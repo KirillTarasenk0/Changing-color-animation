@@ -1,0 +1,121 @@
+:root {
+    --bg-color: #1e0344;
+    --before-animation-bg: #0f011c;
+    --border-radius: 50px;
+}
+* {
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 300px 200px 200px 200px;
+}
+.main__first-animation {
+    width: 600px;
+    height: 40px;
+    border-radius: var(--border-radius); 
+    background-color: var(--before-animation-bg);
+}
+@keyframes movementAnimation {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+    100% {
+        width: 600px;
+        height: 40px;
+    }
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+}
+.main__animation {  
+    border-radius: var(--border-radius);
+    animation-name: movementAnimation;
+    animation-duration: 10s;
+    background-color: #cd0ccd;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.main__animation:hover {
+    width: 300px;
+}
+.main__animation {
+    width: 600px;
+}
+.main__second-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.main__image {
+    width: 200px;
+    height: 100px;
+}
+.main__colors-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.colors__item:not(:last-child) {
+    margin-right: 10px;
+}
+.color__item:hover {
+    cursor: pointer;
+}
+.main__first-color {
+    width: 52px;
+    height: 52px;
+}
+.main__second-color {
+    width: 52px;
+    height: 52px;
+}
+.main__third-color {
+    width: 52px;
+    height: 52px;
+}
+.main__fourth-color {
+    width: 52px;
+    height: 52px;
+}
+.main__fivth-color {
+    width: 52px;
+    height: 52px;
+}
+.main__container-first-color {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: #057665;
+}
+.main__container-second-color {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: rgba(210, 168, 18, 0.949);
+}
+.main__container-third-color {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: #cd0ccd;
+}
+.main__container-fourth-color {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: #ab07e2;
+}
+.main__container-fivth-color {
+    width: 50px;
+    height: 50px;
+    border-radius: var(--border-radius);
+    background-color: #6140ad;
+}
